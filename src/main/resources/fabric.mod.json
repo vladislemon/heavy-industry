@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "heavy-industry",
+  "version": "${version}",
+  "name": "Heavy Industry",
+  "description": "Mod about automation with fancy heavy machinery",
+  "authors": [
+    "vladislemon",
+    "c0_okieZ"
+  ],
+  "contact": {
+    "website": "-",
+    "repo": "https://github.com/vladislemon/heavy-industry"
+  },
+  "license": "MIT",
+  "icon": "assets/heavy-industry/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "net.lemoncookie.heavyindustry.client.HeavyIndustryClient"
+    ],
+    "main": [
+      "net.lemoncookie.heavyindustry.HeavyIndustry"
+    ]
+  },
+  "mixins": [
+    "heavy-industry.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.10.6+build.214",
+    "fabric": "*",
+    "minecraft": "1.16.4"
+  }
+}
